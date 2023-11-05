@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #fff;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    #karnataka-flag {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 150px;
+      background-image: url('/Untitled\ design.png'); 
+      background-size: cover;
+    }
+
+    #wishing-text {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      white-space: nowrap;
+      font-size: 24px;
+      color: #333;
+      animation: moveText 10s linear infinite;
+    }
+
+    @keyframes moveText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="karnataka-flag"></div>
+  <div id="wishing-text">Happy Kannada Rajyotsava!</div>
+</body>
+</html>
